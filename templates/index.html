@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-body m-3">
+                <div class="card-title mb-5 fs-1">Dojo Survey</div>
+                <form action="/process" method="POST">
+                    <label for="form_name" class="form-label">Name:</label>
+                    <input type="text" id="form_name" name="form_name" class="form-control mb-4" placeholder="Name required to submit survey...">
+                    <label for="form_location" class="form-label">Location:</label>
+                    <select name="form_location" id="form_location" class="form-select mb-4">
+                        <option selected>Where are you from?</option>
+                        <option value="California">California</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Washington">Washington</option>
+                    </select>
+                    <label for="form_language" class="form-label">Language:</label>
+                    <select name="form_language" id="form_language" class="form-select mb-4">
+                        <option selected>What's your favorite language?</option>
+                        <option value="HTML">HTML</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="CSS">CSS</option>
+                    </select>
+                    <label for="form_comments" class="form-label">Comments:</label>
+                    <textarea name="form_comments" id="form_comments" cols="30" rows="7" class="form-control mb-4" placeholder="Tell us something..."></textarea>
+                    <button class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
